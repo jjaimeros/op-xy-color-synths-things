@@ -1,0 +1,70 @@
+<g id="twinosc_panel">
+<!-- SDK two-page header: keep this block before machine artwork below y=38. -->
+<path d="M0,0 L480,0 L480,38 L0,38 Z" fill="#000000"/>
+<path id="twinosc_node_2" transform="matrix(1 0 0 1 0 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path id="twinosc_node_3" transform="matrix(1 0 0 1 60 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#323232" stroke="#323232" stroke-width="0.5"/>
+<path id="twinosc_node_4" transform="matrix(1 0 0 1 120 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#4B4B4B" stroke="#4B4B4B" stroke-width="0.5"/>
+<path id="twinosc_node_5" transform="matrix(1 0 0 1 180 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#646464" stroke="#646464" stroke-width="0.5"/>
+<path id="twinosc_node_6" transform="matrix(1 0 0 1 240 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#7D7D7D" stroke="#7D7D7D" stroke-width="0.5"/>
+<path id="twinosc_node_7" transform="matrix(1 0 0 1 300 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#969696" stroke="#969696" stroke-width="0.5"/>
+<path id="twinosc_node_8" transform="matrix(1 0 0 1 360 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#AFAFAF" stroke="#AFAFAF" stroke-width="0.5"/>
+<path id="twinosc_node_9" transform="matrix(1 0 0 1 420 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#CDCDCD" stroke="#CDCDCD" stroke-width="0.5"/>
+<text id="twinosc_text_0" transform="matrix(1 0 0 1 5 10)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_1" transform="matrix(1 0 0 1 125 10)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_2" transform="matrix(1 0 0 1 245 10)" fill="#000000" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_3" transform="matrix(1 0 0 1 365 10)" fill="#000000" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_4" transform="matrix(1 0 0 1 65 17.4)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="twinosc_text_5" transform="matrix(1 0 0 1 185 17.4)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="twinosc_text_6" transform="matrix(1 0 0 1 305 17.4)" fill="#000000" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="twinosc_text_7" transform="matrix(1 0 0 1 425 17.4)" fill="#000000" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="twinosc_text_8" transform="matrix(1 0 0 1 5 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_9" transform="matrix(1 0 0 1 125 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_10" transform="matrix(1 0 0 1 245 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_11" transform="matrix(1 0 0 1 365 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="twinosc_text_12" transform="matrix(1 0 0 1 65 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<text id="twinosc_text_13" transform="matrix(1 0 0 1 185 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<text id="twinosc_text_14" transform="matrix(1 0 0 1 305 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<text id="twinosc_text_15" transform="matrix(1 0 0 1 425 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<path d="M22.819,52.567 L94.566,52.567 C98.317,52.567 101.359,55.608 101.359,59.36 L101.359,110.729 C101.359,114.48 98.317,117.521 94.566,117.521 L22.819,117.521 C19.068,117.521 16.027,114.48 16.027,110.729 L16.027,59.36 C16.027,55.608 19.068,52.567 22.819,52.567 Z" fill="#31425F" stroke="#31425F" stroke-width="1"/>
+<path d="M22.806,140.477 L94.553,140.477 C98.304,140.477 101.345,143.518 101.345,147.27 L101.345,198.639 C101.345,202.39 98.304,205.431 94.553,205.431 L22.806,205.431 C19.054,205.431 16.013,202.39 16.013,198.639 L16.013,147.27 C16.013,143.518 19.054,140.477 22.806,140.477 Z" fill="#31425F" stroke="#31425F" stroke-width="1"/>
+<path d="M144.4,52.567 L216.146,52.567 C219.898,52.567 222.939,55.608 222.939,59.36 L222.939,110.729 C222.939,114.48 219.898,117.521 216.146,117.521 L144.4,117.521 C140.648,117.521 137.607,114.48 137.607,110.729 L137.607,59.36 C137.607,55.608 140.648,52.567 144.4,52.567 Z" fill="#856742" stroke="#856742" stroke-width="1"/>
+<path d="M143.777,140.477 L215.524,140.477 C219.276,140.477 222.317,143.518 222.317,147.27 L222.317,198.639 C222.317,202.39 219.276,205.431 215.524,205.431 L143.777,205.431 C140.026,205.431 136.985,202.39 136.985,198.639 L136.985,147.27 C136.985,143.518 140.026,140.477 143.777,140.477 Z" fill="#856742" stroke="#856742" stroke-width="1"/>
+<path d="M264.43,52.567 L336.177,52.567 C339.928,52.567 342.969,55.608 342.969,59.36 L342.969,110.729 C342.969,114.48 339.928,117.521 336.177,117.521 L264.43,117.521 C260.679,117.521 257.637,114.48 257.637,110.729 L257.637,59.36 C257.637,55.608 260.679,52.567 264.43,52.567 Z" fill="#D1D3D4" stroke="#D1D3D4" stroke-width="1"/>
+<path d="M263.998,140.477 L335.745,140.477 C339.496,140.477 342.537,143.518 342.537,147.27 L342.537,198.639 C342.537,202.39 339.496,205.431 335.745,205.431 L263.998,205.431 C260.247,205.431 257.205,202.39 257.205,198.639 L257.205,147.27 C257.205,143.518 260.247,140.477 263.998,140.477 Z" fill="#D1D3D4" stroke="#D1D3D4" stroke-width="1"/>
+<path id="twinosc_node_10" d="M34.693,99.044 L49.452,73.215 C50.134,72.021 50.693,72.169 50.693,73.544 L50.693,96.544 C50.693,97.919 51.251,98.067 51.933,96.874 L65.452,73.215 C66.134,72.021 66.693,72.169 66.693,73.544 L66.693,96.544 C66.693,97.919 67.251,98.067 67.933,96.874 L82.693,71.044" fill="none" stroke="#E8E3D3" stroke-width="4"/>
+<path id="twinosc_node_11" d="M34.693,99.044 L34.693,73.544 C34.693,72.169 35.818,71.044 37.193,71.044 L44.193,71.044 C45.568,71.044 46.693,72.169 46.693,73.544 L46.693,96.544 C46.693,97.919 47.818,99.044 49.193,99.044 L56.193,99.044 C57.568,99.044 58.693,97.919 58.693,96.544 L58.693,73.544 C58.693,72.169 59.818,71.044 61.193,71.044 L68.193,71.044 C69.568,71.044 70.693,72.169 70.693,73.544 L70.693,96.544 C70.693,97.919 71.818,99.044 73.193,99.044 L80.193,99.044 C81.568,99.044 82.693,97.919 82.693,96.544 L82.693,71.044" fill="none" stroke="#E8E3D3" stroke-width="4"/>
+<path id="twinosc_node_12" d="M34.693,99.044 L45.708,73.342 C46.249,72.078 47.136,72.078 47.677,73.342 L57.708,96.746 C58.249,98.01 59.136,98.01 59.677,96.746 L69.708,73.342 C70.249,72.078 71.136,72.078 71.677,73.342 L82.693,99.044" fill="none" stroke="#E8E3D3" stroke-width="4"/>
+<path id="twinosc_node_13" d="M34.679,186.954 L49.439,161.125 C50.121,159.931 50.679,160.079 50.679,161.454 L50.679,184.454 C50.679,185.829 51.237,185.977 51.92,184.784 L65.439,161.125 C66.121,159.931 66.679,160.079 66.679,161.454 L66.679,184.454 C66.679,185.829 67.237,185.977 67.92,184.784 L82.679,158.954" fill="none" stroke="#E8E3D3" stroke-width="4"/>
+<path id="twinosc_node_14" d="M34.679,186.954 L34.679,161.454 C34.679,160.079 35.804,158.954 37.179,158.954 L44.179,158.954 C45.554,158.954 46.679,160.079 46.679,161.454 L46.679,184.454 C46.679,185.829 47.804,186.954 49.179,186.954 L56.179,186.954 C57.554,186.954 58.679,185.829 58.679,184.454 L58.679,161.454 C58.679,160.079 59.804,158.954 61.179,158.954 L68.179,158.954 C69.554,158.954 70.679,160.079 70.679,161.454 L70.679,184.454 C70.679,185.829 71.804,186.954 73.179,186.954 L80.179,186.954 C81.554,186.954 82.679,185.829 82.679,184.454 L82.679,158.954" fill="none" stroke="#E8E3D3" stroke-width="4"/>
+<path id="twinosc_node_15" d="M34.679,186.954 L45.694,161.252 C46.236,159.988 47.122,159.988 47.664,161.252 L57.694,184.656 C58.236,185.92 59.122,185.92 59.664,184.656 L69.694,161.252 C70.236,159.988 71.122,159.988 71.664,161.252 L82.679,186.954" fill="none" stroke="#E8E3D3" stroke-width="4"/>
+<path id="twinosc_node_0" transform="matrix(1 0 0 1 180.273 85.044)" d="M-32 -1 L-31 -1 L-30 -1 L-29 -1 L-28 -1 L-27 -1 L-26 -1 L-25 -1 L-24 -1 L-23 -1 L-22 -1 L-21 -1 L-20 -1 L-19 -1 L-18 -1 L-17 -1 L-16 -1 L-15 -1 L-14 -1 L-13 -1 L-12 -1 L-11 -1 L-10 -1 L-9 -1 L-8 -1 L-7 -1 L-6 -1 L-5 -1 L-4 -1 L-3 -1 L-2 -1 L-1 -1 L31 1 L30 1 L29 1 L28 1 L27 1 L26 1 L25 1 L24 1 L23 1 L22 1 L21 1 L20 1 L19 1 L18 1 L17 1 L16 1 L15 1 L14 1 L13 1 L12 1 L11 1 L10 1 L9 1 L8 1 L7 1 L6 1 L5 1 L4 1 L3 1 L2 1 L1 1 L0 1 Z" fill="none" stroke="#E8E3D3" stroke-width="3.5"/>
+<path id="twinosc_node_1" transform="matrix(1 0 0 1 179.651 172.954)" d="M-32 -1 L-31 -1 L-30 -1 L-29 -1 L-28 -1 L-27 -1 L-26 -1 L-25 -1 L-24 -1 L-23 -1 L-22 -1 L-21 -1 L-20 -1 L-19 -1 L-18 -1 L-17 -1 L-16 -1 L-15 -1 L-14 -1 L-13 -1 L-12 -1 L-11 -1 L-10 -1 L-9 -1 L-8 -1 L-7 -1 L-6 -1 L-5 -1 L-4 -1 L-3 -1 L-2 -1 L-1 -1 L31 1 L30 1 L29 1 L28 1 L27 1 L26 1 L25 1 L24 1 L23 1 L22 1 L21 1 L20 1 L19 1 L18 1 L17 1 L16 1 L15 1 L14 1 L13 1 L12 1 L11 1 L10 1 L9 1 L8 1 L7 1 L6 1 L5 1 L4 1 L3 1 L2 1 L1 1 L0 1 Z" fill="none" stroke="#E8E3D3" stroke-width="3.5"/>
+<path id="twinosc_node_16" transform="matrix(1 0 0 1 300.303 85.044)" d="M-1.25,-22 L1.25,-22 L1.25,22 L-1.25,22 Z" fill="#1F9D55" stroke="#1F9D55" stroke-width="0.5"/>
+<path id="twinosc_node_17" transform="matrix(1 0 0 1 300.303 85.044)" d="M-1.25,-22 L1.25,-22 L1.25,22 L-1.25,22 Z" fill="#1F9D55" stroke="#1F9D55" stroke-width="0.5"/>
+<path id="twinosc_node_18" transform="matrix(1 0 0 1 300.303 85.044)" d="M-1.25,-22 L1.25,-22 L1.25,22 L-1.25,22 Z" fill="#1F9D55" stroke="#1F9D55" stroke-width="0.5"/>
+<path id="twinosc_node_19" transform="matrix(1 0 0 1 300.303 85.044)" d="M-1.25,-22 L1.25,-22 L1.25,22 L-1.25,22 Z" fill="#1F9D55" stroke="#1F9D55" stroke-width="0.5"/>
+<path id="twinosc_node_20" transform="matrix(1 0 0 1 300.303 85.044)" d="M-1.25,-22 L1.25,-22 L1.25,22 L-1.25,22 Z" fill="#1F9D55" stroke="#1F9D55" stroke-width="0.5"/>
+<path id="twinosc_node_21" transform="matrix(1 0 0 1 300.303 85.044)" d="M-1.25,-22 L1.25,-22 L1.25,22 L-1.25,22 Z" fill="#1F9D55" stroke="#1F9D55" stroke-width="0.5"/>
+<path id="twinosc_node_22" transform="matrix(1 0 0 1 299.871 172.954)" d="M0,-18 L14,-2 L5,-2 L5,18 L-5,18 L-5,-2 L-14,-2 Z" fill="#191919" stroke="#191919" stroke-width="0.5"/>
+<path id="twinosc_node_23" transform="matrix(1 0 0 1 299.871 172.954)" d="M0,-18 L14,-2 L5,-2 L5,18 L-5,18 L-5,-2 L-14,-2 Z" fill="#191919" stroke="#191919" stroke-width="0.5"/>
+<path id="twinosc_node_24" transform="matrix(1 0 0 1 299.871 172.954)" d="M-20,-2.5 L20,-2.5 L20,2.5 L-20,2.5 Z" fill="#191919" stroke="#191919" stroke-width="0.5"/>
+<path id="twinosc_node_25" d="M395.682,63 L415.682,63 L415.682,107 L395.682,107 Z" fill="#2F6AA3" stroke="#2F6AA3" stroke-width="0.5"/>
+<path id="twinosc_node_26" d="M423.682,63 L443.682,63 L443.682,107 L423.682,107 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.5"/>
+<path d="M380.016,107 L459.348,107 L459.348,153 L380.016,153 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path d="M383.808,52.567 L455.555,52.567 C459.306,52.567 462.348,55.608 462.348,59.36 L462.348,110.729 C462.348,114.48 459.306,117.521 455.555,117.521 L383.808,117.521 C380.057,117.521 377.016,114.48 377.016,110.729 L377.016,59.36 C377.016,55.608 380.057,52.567 383.808,52.567 Z" fill="none" stroke="#DC4E34" stroke-width="1"/>
+<path id="twinosc_node_27" d="M377.276,141.977 C384.316,140.477 391.356,143.477 398.609,141.977 C405.649,140.477 412.689,143.477 419.942,141.977 C426.982,140.477 434.022,143.477 441.275,141.977 C448.315,140.477 455.355,143.477 462.608,141.977 L462.608,205.431 L377.276,205.431 Z" fill="#2F6FB0" stroke="#2F6FB0" stroke-width="0.5"/>
+<path d="M376.276,205.431 L463.608,205.431 L463.608,220 L376.276,220 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path d="M377.276,147.27 C377.276,143.518 380.318,140.477 384.069,140.477 L376.276,139.477 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path d="M462.608,147.27 C462.608,143.518 459.567,140.477 455.816,140.477 L463.608,139.477 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path d="M377.276,198.639 C377.276,202.39 380.318,205.431 384.069,205.431 L376.276,206.431 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path d="M462.608,198.639 C462.608,202.39 459.567,205.431 455.816,205.431 L463.608,206.431 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path id="twinosc_node_28" d="M406.942,167.954 L432.942,167.954 C438.442,167.954 442.942,172.454 442.942,177.954 C442.942,183.454 438.442,187.954 432.942,187.954 L406.942,187.954 C401.442,187.954 396.942,183.454 396.942,177.954 C396.942,172.454 401.442,167.954 406.942,167.954 Z" fill="#F2C230" stroke="#F2C230" stroke-width="0.5"/>
+<path id="twinosc_node_29" d="M411.942,168.954 L411.942,162.954 C411.942,159.954 413.942,157.954 416.942,157.954 L421.942,157.954 C424.942,157.954 426.942,159.954 426.942,162.954 L426.942,168.954 Z" fill="#F2C230" stroke="#F2C230" stroke-width="0.5"/>
+<path id="twinosc_node_30" d="M421.942,157.954 L421.942,153.954 L427.942,153.954" fill="none" stroke="#F2C230" stroke-width="2"/>
+<circle id="twinosc_node_31" cx="393.942" cy="177.954" r="3.5" fill="#F2C230" stroke="#F2C230" stroke-width="0.5"/>
+<circle id="twinosc_node_32" cx="408.942" cy="177.954" r="3.2" fill="#31425F" stroke="#E8E3D3" stroke-width="0.8"/>
+<circle id="twinosc_node_33" cx="419.942" cy="177.954" r="3.2" fill="#31425F" stroke="#E8E3D3" stroke-width="0.8"/>
+<circle id="twinosc_node_34" cx="430.942" cy="177.954" r="3.2" fill="#31425F" stroke="#E8E3D3" stroke-width="0.8"/>
+<path d="M384.069,140.477 L455.816,140.477 C459.567,140.477 462.608,143.518 462.608,147.27 L462.608,198.639 C462.608,202.39 459.567,205.431 455.816,205.431 L384.069,205.431 C380.318,205.431 377.276,202.39 377.276,198.639 L377.276,147.27 C377.276,143.518 380.318,140.477 384.069,140.477 Z" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+<circle id="twinosc_palette_0" cx="640" cy="0" r="1" fill="#000000" stroke="#000000" stroke-width="1"/>
+</g>

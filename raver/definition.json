@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "raver",
+  "name": "Raver",
+  "parameters": [
+    {
+      "id": "wave",
+      "label": "Wave",
+      "default": 0,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "saw",
+          "sqr",
+          "sub"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "detune",
+      "label": "Detune",
+      "default": 0.75,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "fenv",
+      "label": "Flt Env",
+      "default": 0.63,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "filter",
+      "label": "Filter",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "noise",
+      "label": "Noise",
+      "control": 0,
+      "default": 0.06,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "sine",
+      "label": "Sine",
+      "control": 1,
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "reso",
+      "label": "Reso",
+      "control": 2,
+      "default": 0.14,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    }
+  ],
+  "presets": {
+    "Supersaw": {
+      "wave": 0,
+      "detune": 0.75,
+      "fenv": 0.63,
+      "noise": 0.06,
+      "sine": 0,
+      "reso": 0.14,
+      "filter": 0.5
+    }
+  },
+  "resources": {
+    "voiceBytes": 48,
+    "voiceAlignment": 4,
+    "voiceCapacity": 8,
+    "sharedBytes": 0,
+    "outputPeakQ31": 1073741824,
+    "display": {
+      "stateBytes": 176,
+      "stateAlignment": 4,
+      "paths": 0,
+      "points": 0,
+      "nodes": 44,
+      "texts": 16,
+      "palette": 12
+    }
+  },
+  "press": "page"
+}

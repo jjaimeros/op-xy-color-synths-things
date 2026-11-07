@@ -1,0 +1,75 @@
+<g id="acidgun_panel">
+<!-- SDK two-page header: keep this block before machine artwork below y=38. -->
+<path d="M0,0 L480,0 L480,38 L0,38 Z" fill="#000000"/>
+<path id="acidgun_node_3" transform="matrix(1 0 0 1 0 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#000000" stroke="#000000" stroke-width="0.5"/>
+<path id="acidgun_node_4" transform="matrix(1 0 0 1 60 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#323232" stroke="#323232" stroke-width="0.5"/>
+<path id="acidgun_node_5" transform="matrix(1 0 0 1 120 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#4B4B4B" stroke="#4B4B4B" stroke-width="0.5"/>
+<path id="acidgun_node_6" transform="matrix(1 0 0 1 180 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#646464" stroke="#646464" stroke-width="0.5"/>
+<path id="acidgun_node_7" transform="matrix(1 0 0 1 240 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#7D7D7D" stroke="#7D7D7D" stroke-width="0.5"/>
+<path id="acidgun_node_8" transform="matrix(1 0 0 1 300 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#969696" stroke="#969696" stroke-width="0.5"/>
+<path id="acidgun_node_9" transform="matrix(1 0 0 1 360 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#AFAFAF" stroke="#AFAFAF" stroke-width="0.5"/>
+<path id="acidgun_node_10" transform="matrix(1 0 0 1 420 0)" d="M0,0 L60,0 L60,20 L0,20 Z" fill="#CDCDCD" stroke="#CDCDCD" stroke-width="0.5"/>
+<text id="acidgun_text_0" transform="matrix(1 0 0 1 5 10)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_1" transform="matrix(1 0 0 1 125 10)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_2" transform="matrix(1 0 0 1 245 10)" fill="#000000" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_3" transform="matrix(1 0 0 1 365 10)" fill="#000000" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_4" transform="matrix(1 0 0 1 65 17.4)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="acidgun_text_5" transform="matrix(1 0 0 1 185 17.4)" fill="#CBCBCB" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="acidgun_text_6" transform="matrix(1 0 0 1 305 17.4)" fill="#000000" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="acidgun_text_7" transform="matrix(1 0 0 1 425 17.4)" fill="#000000" font-family="UniversNextPro-Light" font-size="20px">-</text>
+<text id="acidgun_text_8" transform="matrix(1 0 0 1 5 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_9" transform="matrix(1 0 0 1 125 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_10" transform="matrix(1 0 0 1 245 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_11" transform="matrix(1 0 0 1 365 33)" fill="#5A5A5A" font-family="UniversNextPro-Light" font-size="10px">-</text>
+<text id="acidgun_text_12" transform="matrix(1 0 0 1 65 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<text id="acidgun_text_13" transform="matrix(1 0 0 1 185 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<text id="acidgun_text_14" transform="matrix(1 0 0 1 305 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<text id="acidgun_text_15" transform="matrix(1 0 0 1 425 33)" fill="#707070" font-family="UniversNextPro-Light" font-size="13px">-</text>
+<path id="acidgun_node_0" transform="matrix(1 0 0 1 640 320)" d="M40,0 L39.81,0.2 L39.23,0.39 L38.28,0.58 L36.96,0.77 L35.28,0.94 L33.26,1.11 L30.92,1.27 L28.28,1.41 L25.38,1.55 L22.22,1.66 L18.86,1.76 L15.31,1.85 L11.61,1.91 L7.8,1.96 L3.92,1.99 L0,2 L-3.92,1.99 L-7.8,1.96 L-11.61,1.91 L-15.31,1.85 L-18.86,1.76 L-22.22,1.66 L-25.38,1.55 L-28.28,1.41 L-30.92,1.27 L-33.26,1.11 L-35.28,0.94 L-36.96,0.77 L-38.28,0.58 L-39.23,0.39 L-39.81,0.2 L-40,0 L-39.81,-0.2 L-39.23,-0.39 L-38.28,-0.58 L-36.96,-0.77 L-35.28,-0.94 L-33.26,-1.11 L-30.92,-1.27 L-28.28,-1.41 L-25.38,-1.55 L-22.22,-1.66 L-18.86,-1.76 L-15.31,-1.85 L-11.61,-1.91 L-7.8,-1.96 L-3.92,-1.99 L0,-2 L3.92,-1.99 L7.8,-1.96 L11.61,-1.91 L15.31,-1.85 L18.86,-1.76 L22.22,-1.66 L25.38,-1.55 L28.28,-1.41 L30.92,-1.27 L33.26,-1.11 L35.28,-0.94 L36.96,-0.77 L38.28,-0.58 L39.23,-0.39 L39.81,-0.2 Z" fill="none" stroke="#E8142E" stroke-width="1.5"/>
+<path id="acidgun_node_1" transform="matrix(1 0 0 1 640 320)" d="M40,0 L39.81,0.2 L39.23,0.39 L38.28,0.58 L36.96,0.77 L35.28,0.94 L33.26,1.11 L30.92,1.27 L28.28,1.41 L25.38,1.55 L22.22,1.66 L18.86,1.76 L15.31,1.85 L11.61,1.91 L7.8,1.96 L3.92,1.99 L0,2 L-3.92,1.99 L-7.8,1.96 L-11.61,1.91 L-15.31,1.85 L-18.86,1.76 L-22.22,1.66 L-25.38,1.55 L-28.28,1.41 L-30.92,1.27 L-33.26,1.11 L-35.28,0.94 L-36.96,0.77 L-38.28,0.58 L-39.23,0.39 L-39.81,0.2 L-40,0 L-39.81,-0.2 L-39.23,-0.39 L-38.28,-0.58 L-36.96,-0.77 L-35.28,-0.94 L-33.26,-1.11 L-30.92,-1.27 L-28.28,-1.41 L-25.38,-1.55 L-22.22,-1.66 L-18.86,-1.76 L-15.31,-1.85 L-11.61,-1.91 L-7.8,-1.96 L-3.92,-1.99 L0,-2 L3.92,-1.99 L7.8,-1.96 L11.61,-1.91 L15.31,-1.85 L18.86,-1.76 L22.22,-1.66 L25.38,-1.55 L28.28,-1.41 L30.92,-1.27 L33.26,-1.11 L35.28,-0.94 L36.96,-0.77 L38.28,-0.58 L39.23,-0.39 L39.81,-0.2 Z" fill="none" stroke="#FF5468" stroke-width="1.5"/>
+<path id="acidgun_node_2" transform="matrix(1 0 0 1 640 320)" d="M40,0 L39.81,0.2 L39.23,0.39 L38.28,0.58 L36.96,0.77 L35.28,0.94 L33.26,1.11 L30.92,1.27 L28.28,1.41 L25.38,1.55 L22.22,1.66 L18.86,1.76 L15.31,1.85 L11.61,1.91 L7.8,1.96 L3.92,1.99 L0,2 L-3.92,1.99 L-7.8,1.96 L-11.61,1.91 L-15.31,1.85 L-18.86,1.76 L-22.22,1.66 L-25.38,1.55 L-28.28,1.41 L-30.92,1.27 L-33.26,1.11 L-35.28,0.94 L-36.96,0.77 L-38.28,0.58 L-39.23,0.39 L-39.81,0.2 L-40,0 L-39.81,-0.2 L-39.23,-0.39 L-38.28,-0.58 L-36.96,-0.77 L-35.28,-0.94 L-33.26,-1.11 L-30.92,-1.27 L-28.28,-1.41 L-25.38,-1.55 L-22.22,-1.66 L-18.86,-1.76 L-15.31,-1.85 L-11.61,-1.91 L-7.8,-1.96 L-3.92,-1.99 L0,-2 L3.92,-1.99 L7.8,-1.96 L11.61,-1.91 L15.31,-1.85 L18.86,-1.76 L22.22,-1.66 L25.38,-1.55 L28.28,-1.41 L30.92,-1.27 L33.26,-1.11 L35.28,-0.94 L36.96,-0.77 L38.28,-0.58 L39.23,-0.39 L39.81,-0.2 Z" fill="none" stroke="#FFD9D9" stroke-width="1.5"/>
+<path id="acidgun_node_13" transform="matrix(1 0 0 1 196 104)" d="M-100.8,-4.32 L-73.44,-4.32 L-73.44,5.04 L-100.8,5.04 Z" fill="#6D809D" stroke="#FFFFFF" stroke-width="1"/>
+<path id="acidgun_node_11" transform="matrix(1 0 0 1 196 104)" d="M-174.96,-12.96 L-149.76,-15.12 L-147.6,-17.28 L-100.8,-17.28 L-97.92,-13.68 L-97.92,8.64 L-173.52,8.64 L-180.72,0 Z M-157.68,8.64 L-133.92,8.64 L-145.44,64.08 L-149.04,68.4 L-172.8,68.4 L-175.68,64.08 Z M-146.88,59.76 L-74.88,59.76 L-79.2,66.96 L-148.32,66.96 Z M-120.24,8.64 L-116.64,8.64 L-113.76,20.16 L-117.36,23.04 Z M-117.36,20.16 L-102.96,20.16 L-100.8,23.76 L-115.2,25.92 Z M-103.68,8.64 L-97.92,8.64 L-100.8,23.76 L-104.4,22.32 Z M-111.6,8.64 L-108,8.64 L-109.44,16.56 L-112.32,15.84 Z M-76.32,-7.2 L-28.8,-7.2 L-25.2,-2.88 L-7.92,-2.88 L0,-5.04 L0,5.04 L-7.92,2.88 L-20.88,3.6 L-23.76,8.64 L-28.8,12.96 L-74.16,12.96 L-76.32,8.64 Z M-65.52,-11.52 L-43.92,-11.52 L-39.6,-7.2 L-68.4,-7.2 Z M-72.72,12.96 L-51.84,12.96 L-70.56,59.76 L-88.56,59.76 Z" fill="#17181D" stroke="#5E616E" stroke-width="1"/>
+<path id="acidgun_node_12" transform="matrix(1 0 0 1 196 104)" d="M-157.32,13.08 L-136.64,13.08 M-159.12,18.62 L-137.79,18.62 M-160.92,24.16 L-138.95,24.16 M-162.72,29.71 L-140.1,29.71 M-164.52,35.25 L-141.25,35.25 M-166.32,40.8 L-142.4,40.8 M-168.12,46.34 L-143.55,46.34 M-169.92,51.88 L-144.71,51.88 M-171.72,57.43 L-145.86,57.43 M-65.83,12.96 L-82.62,59.76 M-58.73,12.96 L-76.5,59.76 M-54.72,5.04 L-56.88,10.8 M-49.68,5.04 L-51.84,10.8 M-44.64,5.04 L-46.8,10.8 M-39.6,5.04 L-41.76,10.8 M-34.56,5.04 L-36.72,10.8 M-29.52,5.04 L-31.68,10.8 M-169.92,0.72 L-160.56,0.72 L-158.4,3.6 L-160.56,6.48 L-169.92,6.48 L-172.08,3.6 Z M-124.56,-15.12 L-124.56,8.64 M-172.8,-4.32 L-100.8,-4.32 M-72.72,2.16 L-28.8,2.16 M-141.12,63.36 L-79.2,63.36" fill="none" stroke="#3E4150" stroke-width="1"/>
+<path id="acidgun_node_14" transform="matrix(1 0 0 1 640 320)" d="M10,0 L3.23,1.34 L7.07,7.07 L1.34,3.23 L0,10 L-1.34,3.23 L-7.07,7.07 L-3.23,1.34 L-10,0 L-3.23,-1.34 L-7.07,-7.07 L-1.34,-3.23 L0,-10 L1.34,-3.23 L7.07,-7.07 L3.23,-1.34 Z" fill="#FFD9D9" stroke="#E8142E" stroke-width="1"/>
+<path id="acidgun_node_15" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_16" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_17" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_18" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_19" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_20" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_21" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_22" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_23" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_24" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_25" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_26" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_27" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_28" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_29" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_30" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_31" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_32" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_33" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_34" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_35" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_36" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_37" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<path id="acidgun_node_38" transform="matrix(1 0 0 1 640 320)" d="M0,-4 L1,-1 L4,0 L1,1 L0,4 L-1,1 L-4,0 L-1,-1 Z" fill="#FFD34D" stroke="#FFD34D" stroke-width="0.5"/>
+<circle id="acidgun_palette_0" cx="640" cy="0" r="1" fill="#000000" stroke="#000000" stroke-width="1"/>
+<circle id="acidgun_palette_1" cx="640" cy="0" r="1" fill="#E8142E" stroke="#E8142E" stroke-width="1.5"/>
+<circle id="acidgun_palette_2" cx="640" cy="0" r="1" fill="#FF5468" stroke="#FF5468" stroke-width="1.5"/>
+<circle id="acidgun_palette_3" cx="640" cy="0" r="1" fill="#FFD9D9" stroke="#FFD9D9" stroke-width="1.5"/>
+<circle id="acidgun_palette_4" cx="640" cy="0" r="1" fill="#1A3DFF" stroke="#1A3DFF" stroke-width="1.5"/>
+<circle id="acidgun_palette_5" cx="640" cy="0" r="1" fill="#5A80FF" stroke="#5A80FF" stroke-width="1.5"/>
+<circle id="acidgun_palette_6" cx="640" cy="0" r="1" fill="#DCE6FF" stroke="#DCE6FF" stroke-width="1.5"/>
+<circle id="acidgun_palette_7" cx="640" cy="0" r="1" fill="#FFD34D" stroke="#FFD34D" stroke-width="1"/>
+<circle id="acidgun_palette_8" cx="640" cy="0" r="1" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+<circle id="acidgun_palette_9" cx="640" cy="0" r="1" fill="#FF8A1F" stroke="#FF8A1F" stroke-width="1"/>
+<circle id="acidgun_palette_10" cx="640" cy="0" r="1" fill="#FF5A6A" stroke="#FF5A6A" stroke-width="1"/>
+<circle id="acidgun_palette_11" cx="640" cy="0" r="1" fill="#7FA6FF" stroke="#7FA6FF" stroke-width="1"/>
+<circle id="acidgun_palette_12" cx="640" cy="0" r="1" fill="#70101C" stroke="#70101C" stroke-width="1.5"/>
+<circle id="acidgun_palette_13" cx="640" cy="0" r="1" fill="#0E1C78" stroke="#0E1C78" stroke-width="1.5"/>
+<circle id="acidgun_palette_14" cx="640" cy="0" r="1" fill="#A8303E" stroke="#A8303E" stroke-width="1.5"/>
+<circle id="acidgun_palette_15" cx="640" cy="0" r="1" fill="#3048A8" stroke="#3048A8" stroke-width="1.5"/>
+</g>

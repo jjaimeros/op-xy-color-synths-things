@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "sdk": "1.8",
+  "kind": "synth",
+  "description": "Ofender: chiptune de máquinas de los 80 con repeticiones, bombo y explosión, en una cabina arcade.",
+  "presetDefaults": {
+    "amp": {
+      "attack": 0,
+      "decay": 16000,
+      "sustain": 32767,
+      "release": 3000
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "acidgun",
+  "name": "Acidgun",
+  "parameters": [
+    {
+      "id": "cutoff",
+      "label": "Cutoff",
+      "default": 0,
+      "mapping": {
+        "kind": "exponential",
+        "minimum": 100,
+        "maximum": 1500
+      },
+      "display": "percent"
+    },
+    {
+      "id": "reso",
+      "label": "Reso",
+      "default": 1,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "envmod",
+      "label": "Env Mod",
+      "default": 1,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "decay",
+      "label": "Decay",
+      "default": 0.45,
+      "mapping": {
+        "kind": "exponential",
+        "minimum": 100,
+        "maximum": 2500
+      },
+      "display": "duration"
+    },
+    {
+      "id": "wave",
+      "label": "Wave",
+      "control": 0,
+      "default": 0,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "saw",
+          "sqr"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "tune",
+      "label": "Tune",
+      "control": 1,
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": -12,
+        "maximum": 12
+      },
+      "display": "semitones"
+    },
+    {
+      "id": "slide",
+      "label": "Slide",
+      "control": 2,
+      "default": 0,
+      "mapping": {
+        "kind": "anchors",
+        "values": [
+          0,
+          40,
+          150,
+          600
+        ]
+      },
+      "display": "duration"
+    },
+    {
+      "id": "drive",
+      "label": "Drive",
+      "control": 3,
+      "default": 1,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    }
+  ],
+  "presets": {},
+  "resources": {
+    "voiceBytes": 76,
+    "voiceAlignment": 4,
+    "voiceCapacity": 8,
+    "sharedBytes": 88,
+    "outputPeakQ31": 1073741824,
+    "display": {
+      "stateBytes": 576,
+      "stateAlignment": 4,
+      "paths": 3,
+      "points": 64,
+      "nodes": 39,
+      "texts": 16,
+      "palette": 16
+    }
+  },
+  "press": "page"
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "nuvola",
+  "name": "Nuvola",
+  "parameters": [
+    {
+      "id": "waveform",
+      "label": "Waveform",
+      "default": 0,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "saw",
+          "sqr",
+          "pulse",
+          "sine",
+          "sw+sq"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "nuvolas",
+      "label": "Nuvolas",
+      "default": 0.7,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "wind",
+      "label": "Wind",
+      "default": 0.3,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 50
+      },
+      "display": "percent"
+    },
+    {
+      "id": "sun",
+      "label": "Sun",
+      "default": 0.0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    }
+  ],
+  "presets": {
+    "Cielo": {
+      "waveform": 0.1,
+      "nuvolas": 0.7,
+      "wind": 0.3,
+      "sun": 0.0
+    },
+    "Tormenta": {
+      "waveform": 0.1,
+      "nuvolas": 0.95,
+      "wind": 0.8,
+      "sun": 0.3
+    },
+    "Brisa": {
+      "waveform": 0.7,
+      "nuvolas": 0.5,
+      "wind": 0.2,
+      "sun": 0.2
+    },
+    "Algodon": {
+      "waveform": 0.9,
+      "nuvolas": 0.95,
+      "wind": 0.4,
+      "sun": 0.5
+    },
+    "Atardecer": {
+      "waveform": 0.5,
+      "nuvolas": 0.95,
+      "wind": 0.25,
+      "sun": 0.9
+    }
+  },
+  "resources": {
+    "voiceBytes": 112,
+    "voiceAlignment": 4,
+    "voiceCapacity": 8,
+    "sharedBytes": 0,
+    "outputPeakQ31": 1073741824,
+    "display": {
+      "stateBytes": 336,
+      "stateAlignment": 4,
+      "paths": 0,
+      "points": 0,
+      "nodes": 44,
+      "texts": 0,
+      "palette": 16
+    }
+  }
+}

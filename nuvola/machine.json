@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "sdk": "1.8",
+  "kind": "synth",
+  "description": "Nuvola: sinte de nubes, hasta 5 osciladores al unísono con wind (detune) y sun (drift)."
+}

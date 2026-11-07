@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ofender",
+  "name": "Ofender",
+  "parameters": [
+    {"id": "armor", "label": "Armor", "default": 0,
+     "mapping": {"kind": "enum", "labels": ["arp", "arp2", "arps", "vibe", "sine", "zap", "coin", "noise"]}, "display": "enum"},
+    {"id": "battery", "label": "Battery", "default": 1,
+     "mapping": {"kind": "linear", "minimum": 0, "maximum": 1}, "display": "percent"},
+    {"id": "boom", "label": "Boom", "default": 0,
+     "mapping": {"kind": "linear", "minimum": 0, "maximum": 1}, "display": "percent"},
+    {"id": "blast", "label": "Blast", "default": 0,
+     "mapping": {"kind": "linear", "minimum": 0, "maximum": 1}, "display": "percent"}
+  ],
+  "presets": {},
+  "resources": {
+    "voiceBytes": 56,
+    "voiceAlignment": 4,
+    "voiceCapacity": 8,
+    "sharedBytes": 0,
+    "outputPeakQ31": 1073741824,
+    "display": {
+      "stateBytes": 480,
+      "stateAlignment": 4,
+      "paths": 0,
+      "points": 0,
+      "nodes": 76,
+      "texts": 0,
+      "palette": 7
+    }
+  }
+}

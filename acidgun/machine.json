@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "sdk": "1.8",
+  "kind": "synth",
+  "description": "Acidgun: bajo ácido al estilo TB-303 (filtro resonante, env mod, slide y drive MXR) con una pistola de rayos.",
+  "presetDefaults": {
+    "amp": {
+      "attack": 0,
+      "decay": 16000,
+      "sustain": 32767,
+      "release": 1200
+    }
+  },
+  "presets": "presets"
+}

@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "sdk": "1.9",
+  "kind": "synth",
+  "description": "Raver: supersaw de rave, un resplandor que dispara láseres sobre el público.",
+  "presets": "presets"
+}

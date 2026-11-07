@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "id": "twinosc",
+  "name": "Twin Osc",
+  "parameters": [
+    {
+      "id": "wave1",
+      "label": "Osc 1",
+      "default": 0,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "saw",
+          "sqr",
+          "tri"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "shape1",
+      "label": "Shape 1",
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "detune",
+      "label": "Detune",
+      "default": 0.2,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 50
+      },
+      "display": "percent"
+    },
+    {
+      "id": "mix",
+      "label": "Mix",
+      "default": 0.5,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "wave2",
+      "label": "Osc 2",
+      "control": 0,
+      "default": 0,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "saw",
+          "sqr",
+          "tri"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "shape2",
+      "label": "Shape 2",
+      "control": 1,
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    },
+    {
+      "id": "octave",
+      "label": "Octave",
+      "control": 2,
+      "default": 0.5,
+      "mapping": {
+        "kind": "enum",
+        "labels": [
+          "-2",
+          "-1",
+          "0",
+          "+1",
+          "+2"
+        ]
+      },
+      "display": "enum"
+    },
+    {
+      "id": "sub",
+      "label": "Sub",
+      "control": 3,
+      "default": 0,
+      "mapping": {
+        "kind": "linear",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "display": "percent"
+    }
+  ],
+  "presets": {
+    "Fat Saw": {
+      "wave1": 0,
+      "shape1": 0,
+      "detune": 0.3,
+      "mix": 0.5,
+      "wave2": 0,
+      "shape2": 0,
+      "octave": 0.5,
+      "sub": 0
+    },
+    "Sub Bass": {
+      "wave1": 0.5,
+      "shape1": 0.2,
+      "detune": 0.1,
+      "mix": 0.3,
+      "wave2": 0,
+      "shape2": 0,
+      "octave": 0.3,
+      "sub": 0.8
+    },
+    "Hollow": {
+      "wave1": 0.5,
+      "shape1": 0.6,
+      "detune": 0.15,
+      "mix": 0.5,
+      "wave2": 0.5,
+      "shape2": 0.3,
+      "octave": 0.5,
+      "sub": 0
+    },
+    "Soft Tri": {
+      "wave1": 0.9,
+      "shape1": 0,
+      "detune": 0.08,
+      "mix": 0.35,
+      "wave2": 0.9,
+      "shape2": 0.4,
+      "octave": 0.7,
+      "sub": 0.3
+    },
+    "Saw Fifth": {
+      "wave1": 0,
+      "shape1": 0.5,
+      "detune": 0.4,
+      "mix": 0.4,
+      "wave2": 0.5,
+      "shape2": 0.5,
+      "octave": 0.7,
+      "sub": 0
+    }
+  },
+  "resources": {
+    "voiceBytes": 68,
+    "voiceAlignment": 4,
+    "voiceCapacity": 8,
+    "sharedBytes": 0,
+    "outputPeakQ31": 1073741824,
+    "display": {
+      "stateBytes": 24,
+      "stateAlignment": 4,
+      "paths": 2,
+      "points": 64,
+      "nodes": 35,
+      "texts": 16,
+      "palette": 1
+    }
+  },
+  "press": "page"
+}

@@ -1,0 +1,223 @@
+diff --git a/builder/core.mjs b/builder/core.mjs
+index 5c51e73..0b6bf99 100644
+--- a/builder/core.mjs
++++ b/builder/core.mjs
+@@ -10,7 +10,7 @@ export const selectArtwork = Graphics.selectArtwork;
+ // The init preset's authored settings, shared with tooling.adapters.default_preset
+ // (write_builder inlines this same file's content for the offline export).
+ import DEFAULT_PRESET_TEMPLATE from '../tooling/default_preset.json' with { type: 'json' };
+-export const PROFILE_SHA256 = '387eba1070299f301c2295064facbcd3b43228982c3fca2e4ebe85e253b9593c';
++export const PROFILE_SHA256 = '2107b7f35af1ecb4985c63f980c98fa0bda1eedc9bfc083fa34d4b09a0e57056';
+ export function requireThat(ok, message) { if (!ok) throw new Error(message); }
+ const check = requireThat;
+ const utf8 = new TextEncoder();
+diff --git a/profiles/opxy-1.2.1.json b/profiles/opxy-1.2.1.json
+index 9f64dd8..94d36e0 100644
+--- a/profiles/opxy-1.2.1.json
++++ b/profiles/opxy-1.2.1.json
+@@ -971,6 +971,16 @@
+       "symbol": "sdk_note_off",
+       "call": true
+     },
++    {
++      "kind": "hook",
++      "name": "Tape screen draw: turn reels while sounding",
++      "address": "0x8d56b4fc",
++      "file_offset": "0x1a2758",
++      "length": 4,
++      "before": "fde390a4",
++      "symbol": "sdk_tape_draw",
++      "call": true
++    },
+     {
+       "kind": "hook",
+       "address": "0x8d585eda",
+diff --git a/sdk/browser/display.mjs b/sdk/browser/display.mjs
+index 5cb1451..bc051ff 100644
+--- a/sdk/browser/display.mjs
++++ b/sdk/browser/display.mjs
+@@ -5,8 +5,8 @@ import { inputWords } from './controls.mjs';
+ // draw::Input: parameters[4], elapsed, track, note_serial, reduced_motion,
+ // shown[4 bytes], slots[8], held_notes, note_off_serial, shift, choices[4 bytes],
+ // model. ABI 1 ends after slots, ABI 2 after note_off_serial, ABI 3 after
+-// choices; ABI 4 adds a drum kit's model.
+-const INPUT_BYTES = {1: 68, 2: 76, 3: 84, 4: 88};
++// choices; ABI 4 adds a drum kit's model; ABI 5 adds playing (left at 0 here).
++const INPUT_BYTES = {1: 68, 2: 76, 3: 84, 4: 88, 5: 92};
+ const integer = (value, low, high, name) => {
+   if (!Number.isInteger(value) || value < low || value > high) throw new Error(`Invalid ${name}`);
+   return value;
+diff --git a/sdk/host/display_preview.cpp b/sdk/host/display_preview.cpp
+index d936a53..da5e2ae 100644
+--- a/sdk/host/display_preview.cpp
++++ b/sdk/host/display_preview.cpp
+@@ -13,7 +13,7 @@ extern "C" {
+ // A preview shows one machine on one track.
+ opxy::u32 sdk_control_copies(opxy::u32) { return 1; }
+ opxy::i32 sdk_control_display(opxy::u32) { return 0; }
+-opxy::u32 opxy_display_abi() { return 4; }
++opxy::u32 opxy_display_abi() { return 5; }
+ opxy::u32 opxy_display_state_bytes() { return sizeof(state); }
+ opxy::u32 opxy_display_input_bytes() { return sizeof(input); }
+ opxy::u32 opxy_display_frame_bytes() { return sizeof(frame); }
+diff --git a/sdk/include/opxy/draw.hpp b/sdk/include/opxy/draw.hpp
+index 2d59e6e..a37b943 100644
+--- a/sdk/include/opxy/draw.hpp
++++ b/sdk/include/opxy/draw.hpp
+@@ -69,14 +69,15 @@ struct Input {
+     u32 shift;
+     u8 choices[4];
+     u32 model;               // A drum kit's selected key's model (its machine); 0 for other kinds.
++    u32 playing;             // 1 while the transport runs; the browser preview has none and stays 0.
+ };
+ const u32 notes_unavailable = 0xffffffffu;
+-static_assert(sizeof(Input) == 88 && __builtin_offsetof(Input, elapsed) == 16 && __builtin_offsetof(Input, track) == 20 &&
++static_assert(sizeof(Input) == 92 && __builtin_offsetof(Input, elapsed) == 16 && __builtin_offsetof(Input, track) == 20 &&
+               __builtin_offsetof(Input, note_serial) == 24 && __builtin_offsetof(Input, reduced_motion) == 28 &&
+               __builtin_offsetof(Input, shown) == 32 && __builtin_offsetof(Input, slots) == 36 &&
+               __builtin_offsetof(Input, held_notes) == 68 && __builtin_offsetof(Input, note_off_serial) == 72 &&
+               __builtin_offsetof(Input, shift) == 76 && __builtin_offsetof(Input, choices) == 80 &&
+-              __builtin_offsetof(Input, model) == 84,
++              __builtin_offsetof(Input, model) == 84 && __builtin_offsetof(Input, playing) == 88,
+               "Drawing input layout (display.mjs)");
+ static_assert(sizeof(Node) == 28 && sizeof(Text) == 36, "Drawing frame layout (display.mjs)");
+ 
+diff --git a/sdk/platform/opxy-1.2.1/screen.hpp b/sdk/platform/opxy-1.2.1/screen.hpp
+index b876878..d90a32b 100644
+--- a/sdk/platform/opxy-1.2.1/screen.hpp
++++ b/sdk/platform/opxy-1.2.1/screen.hpp
+@@ -66,6 +66,7 @@ inline void bind_controls(Base* o) { stock<void(Leaf**, Base*, u32)>(0x8d521704)
+ inline void* find(Base* o, const char* id) { return platform::find_node(o, id); }
+ inline void draw(Base* o) { stock<void(Base*, u32)>(0x8d51fe1c)(o, 0); }
+ inline u32 selected_track() { return platform::selected_track(); }
++inline u32 transport_playing() { return platform::byte(platform::kPlaying) || platform::byte(platform::kPlaying + 1); }
+ inline const Parameters* parameters(u32 track) { return stock<const Parameters*(u32)>(0x8d4d72a8)(track); }
+ inline void update_controls(Base* o, u32 track, const Parameters* p) {
+     stock<void(Leaf**, u32, const Parameters*)>(0x8d5466ac)(o->values, track, p);
+diff --git a/sdk/platform/opxy-1.2.1/screen_drawing.hpp b/sdk/platform/opxy-1.2.1/screen_drawing.hpp
+index 4d4277e..bfb4a97 100644
+--- a/sdk/platform/opxy-1.2.1/screen_drawing.hpp
++++ b/sdk/platform/opxy-1.2.1/screen_drawing.hpp
+@@ -97,6 +97,7 @@ template <class Machine> struct Drawing {
+         // A sample engine's own screen reads its sample (opxy_sample_overview).
+         if (Machine::sample) sdk_sample_overview_update(controls.track);
+         display_input.reduced_motion = 0;
++        display_input.playing = transport_playing();
+         binding::display_render(&display_state, &display_input, &display_frame);
+         if (!binding::display_valid(&display_frame)) return;
+         Renderer::apply(o,display_frame);
+diff --git a/sdk/platform/opxy-1.2.1/tape_reels.cpp b/sdk/platform/opxy-1.2.1/tape_reels.cpp
+new file mode 100644
+index 0000000..67b63c9
+--- /dev/null
++++ b/sdk/platform/opxy-1.2.1/tape_reels.cpp
+@@ -0,0 +1,84 @@
++// Gira las bobinas de la pantalla de cinta (tape.svg) mientras suena: con el
++// transporte en marcha o con una tecla de la cinta pulsada. Se engancha a la
++// llamada de la pantalla a su dibujo (0x8d51fe1c), así que corre en la GUI, solo
++// con la cinta en pantalla. Un SVG sin nodos reel_* se dibuja como siempre.
++// Los potes 1 y 2 (x1..x10 y 50..200 %) marcan la velocidad de giro.
++#include <opxy/draw.hpp>
++#include "screen.hpp"
++
++namespace {
++using namespace opxy;
++using namespace opxy::platform;
++
++const char* const kIds[] = {"reel_l0", "reel_l1", "reel_l2", "reel_l3",
++                            "reel_r0", "reel_r1", "reel_r2", "reel_r3"};
++const u32 kNodes = sizeof(kIds) / sizeof(kIds[0]);
++const u32 kLeftPerMicrosecond = 1432;   // 2^32 / 3e6: una vuelta cada 3 s a x1 y 100 %
++const u32 kRightPerMicrosecond = 2864;  // la derecha, el doble de rápida
++const u32 kBaseSpeed = 100;             // x1 y 100 %
++const u32 kMaxSpeed = 1200;             // una vuelta cada 0,25 s: más rápido se vería al revés
++const u32 kMaxStep = 100000;            // tras una pausa larga no da un salto
++
++screen::PathNode* nodes[kNodes];
++const void* bound_page;
++const void* bound_svg;
++u32 last_time, left_phase, right_phase;
++
++void bind(screen::Base* o) {
++    if (bound_page == o && bound_svg == o->svg) return;
++    for (u32 i = 0; i < kNodes; ++i) nodes[i] = screen::path_node(screen::find(o, kIds[i]));
++    bound_page = o;
++    bound_svg = o->svg;
++}
++
++// Gira en sentido antihorario las cuatro piezas de una bobina.
++void turn_reel(u32 first, u32 phase) {
++    const draw::Turn turn = draw::rotation(static_cast<i32>((phase >> 16) * 3600 >> 16));
++    const u32 at[4] = {0, 1, 3, 4};
++    const i32 value[4] = {turn.cos, -turn.sin, turn.sin, turn.cos};
++    for (u32 i = first; i < first + kNodes / 2; ++i)
++        if (nodes[i]) screen::set_words(&nodes[i]->leaf, at, value);
++}
++
++// Velocidad (x por %) con los valores que muestra la pantalla de serie (8d56b3cc, 8d56b430).
++u32 reel_speed() {
++    const screen::Parameters* p = screen::parameters(selected_track());
++    if (!p || p->end < p->begin + 8) return kBaseSpeed;
++    const i32* words = reinterpret_cast<const i32*>(p->begin);
++    if (words[0] < 0 || words[1] < 0) return kBaseSpeed;
++    const u32 times = ((static_cast<u32>(words[0]) >> 8) * 10 >> 23) + 1;
++    const u32 scaled = (static_cast<u32>(words[1]) >> 8) * 201;
++    const u32 percent = (scaled >> 23) < 100 ? (scaled >> 24) + 50 : scaled >> 23;
++    const u32 speed = times * percent;
++    return speed < kMaxSpeed ? speed : kMaxSpeed;
++}
++
++// n * speed / 100 sin división (41 / 4096 = 1 / 99,9).
++u32 scaled_rate(u32 per_microsecond, u32 speed) { return per_microsecond * speed * 41 >> 12; }
++
++bool sounding() {
++    if (byte(kPlaying) || byte(kPlaying + 1)) return true;
++    // La misma lectura con la que la pantalla de serie marca la tecla sonando.
++    const u32 note = stock<u32()>(0x8d4d6eb0)() & 0xff;
++    return stock<u32(u32, u32)>(0x8d5b7d10)(selected_track(), note) != 0;
++}
++}  // namespace
++
++extern "C" void sdk_tape_draw(screen::Base* o, u32 argument) __asm__("sdk_tape_draw");
++extern "C" void sdk_tape_draw(screen::Base* o, u32 argument) {
++    if (o->svg) {
++        bind(o);
++        u32 clock[2];  // el reloj de serie escribe 64 bits en microsegundos
++        stock<void(u32*)>(0x8d5be3a0)(clock);
++        const u32 step = clock[0] - last_time;
++        last_time = clock[0];
++        if (sounding() && step < kMaxStep) {
++            const u32 speed = reel_speed();
++            left_phase += step * scaled_rate(kLeftPerMicrosecond, speed);
++            right_phase += step * scaled_rate(kRightPerMicrosecond, speed);
++            turn_reel(0, left_phase);
++            turn_reel(kNodes / 2, right_phase);
++        }
++    }
++    stock<void(screen::Base*, u32)>(0x8d51fe1c)(o, argument);
++}
+diff --git a/tests/fixtures/screen_drawing_host.hpp b/tests/fixtures/screen_drawing_host.hpp
+index 75ec7c2..e8f6c13 100644
+--- a/tests/fixtures/screen_drawing_host.hpp
++++ b/tests/fixtures/screen_drawing_host.hpp
+@@ -30,6 +30,7 @@ template<unsigned N> void set_words(Leaf*, const u32 (&)[N], const i32 (&)[N]) {
+ inline void paint(void*, u32, bool) {}
+ inline void set_text(Leaf*, const char*) {}
+ inline u32 note_serial(u32) { return 0; }
++inline u32 transport_playing() { return 0; }
+ inline bool refresh_controls(Base*, Controls&) { return false; }
+ inline void draw(Base*) {}
+ }}}
+diff --git a/tooling/native.py b/tooling/native.py
+index 9aeadd1..8cd43f9 100644
+--- a/tooling/native.py
++++ b/tooling/native.py
+@@ -211,7 +211,7 @@ SDK_UNITS = ('divide', 'memory', 'registration', 'registration_stock', 'startup'
+              'hook', 'sample_machines', 'sample_hooks', 'sample_callbacks', 'sample_cache', 'sample_cache_stock',
+              'sample_cache_hooks', 'sample_progress', 'sample_progress_stock', 'pad_assignment',
+              'pad_assignment_stock', 'drum_page', 'drum_controls_stock', 'sample_slice_clock', 'drum_display_stock', 'screen_order',
+-             'screen_hooks', 'synth_controls', 'synth_control_table', 'note_activity', 'project_companion',
++             'screen_hooks', 'synth_controls', 'synth_control_table', 'note_activity', 'tape_reels', 'project_companion',
+              'project_companion_table', 'profiling', 'lfo', 'lfo_stock', 'lfo_hooks', 'stock_browser',
+              'extension_runtime', 'extension_collection', 'extension_stock', 'track_control',
+              'track_control_table', 'track_control_hooks', 'track_control_project',
